@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 formStatus.style.color = "#6fbf4c";
                 form.reset();
                 submitBtn.disabled = false;
-                submitBtn.textContent = "✨ Отправить";
+                submitBtn.textContent = "Отправить";
                 
                 setTimeout(() => { formStatus.style.display = "none"; }, 5000);
             } catch (error) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 formStatus.style.background = "rgba(255,68,68,0.1)";
                 formStatus.style.color = "#ff6666";
                 submitBtn.disabled = false;
-                submitBtn.textContent = "✨ Отправить";
+                submitBtn.textContent = "Отправить";
             }
         });
     }
