@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB Game — просто игровой канал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">RB<span class="logo-accent">Game</span></a>
+            <div class="nav-links">
+                <a href="#about">о канале</a>
+                <a href="#contact">написать</a>
+                <a href="https://www.youtube.com/@RB-GameOfficial" target="_blank" class="nav-yt">YouTube</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main hero -->
+    <header class="header">
+        <div class="header-grid">
+            <div class="header-text">
+                <div class="badge">🎮 уже 3 года</div>
+                <h1>RB<span class="highlight">Game</span></h1>
+                <div class="header-stats">
+                    <span>📅 3 года</span>
+                    <span>🎬 видосы выходят</span>
+                    <span>🐢 черепаший прогресс</span>
+                </div>
+                <p>Делаю игровые видео. Без понтов. От души. Медленно, но я ещё здесь.</p>
+                <div class="header-buttons">
+                    <a href="https://www.youtube.com/@RB-GameOfficial" target="_blank" class="btn-primary">▶ Зайти на YouTube</a>
+                    <a href="#contact" class="btn-secondary">📧 Написать мне</a>
+                </div>
+            </div>
+            <div class="header-emoji">
+                🎮
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Info cards row -->
+        <div class="cards-row">
+            <div class="info-card">
+                <div class="card-icon">🎂</div>
+                <h3>3 года</h3>
+                <p>стараюсь, режу, выкладываю</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">💬</div>
+                <h3>человек</h3>
+                <p>отвечаю сам, без ботов</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">❤️</div>
+                <h3>спасибо</h3>
+                <p>что ты здесь, серьёзно</p>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <section id="about" class="about-block">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Привет, я <span class="highlight">RB</span></h2>
+                    <p>Меня зовут RB. Я просто парень, который делает игровые видосы. Уже <strong>3 года</strong> стараюсь, монтирую, выкладываю. Звёзд с неба не хватаю — прогресс медленный, как черепаха 🐢.</p>
+                    <p>Но знаешь что? Мне нравится. И я не собираюсь бросать. Спасибо, что зашёл. Без тебя бы этого канала не было. Честно.</p>
+                    <div class="signature">— RB, твой друг по играм</div>
+                </div>
+                <div class="about-quote">
+                    <div class="quote-mark">"</div>
+                    <p>Лучше медленно идти вперёд, чем стоять на месте</p>
+                    <div class="quote-author">RB, 3-й год пошёл</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube widget -->
+        <div class="yt-widget">
+            <div class="yt-text">
+                <h3>🎬 залетай на ютуб</h3>
+                <p>подпишись, если не сложно — мне будет приятно</p>
+                <a href="https://www.youtube.com/@RB-GameOfficial" target="_blank" class="yt-link">@RB-GameOfficial →</a>
+            </div>
+            <div class="yt-emoji">🎮</div>
+        </div>
+
+        <!-- Contact form -->
+        <section id="contact" class="contact-block">
+            <h2>📬 написать мне</h2>
+            <p class="contact-sub">По рекламе, сотрудничеству или просто поболтать</p>
+
+            <form id="contactForm" class="remade-form">
+                <div class="form-double">
+                    <input type="text" id="name" name="name" placeholder="как тебя зовут?" required>
+                    <input type="email" id="email" name="email" placeholder="твоя почта (чтобы я ответил)" required>
+                </div>
+                <select id="subject" name="subject" required>
+                    <option value="">— выбери тему —</option>
+                    <option value="Реклама">📢 реклама / спонсорство</option>
+                    <option value="Сотрудничество">🤝 давай сотрудничать</option>
+                    <option value="Вопрос">❓ вопрос или просто привет</option>
+                    <option value="Другое">📝 другое</option>
+                </select>
+                <textarea id="message" name="message" placeholder="напиши что хотел сказать..." rows="4" required></textarea>
+                <button type="submit" id="submitBtn" class="form-btn">
+                    ✨ Отправить
+                </button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>🧡 RB Game · сделал сам, от души</p>
+            <div class="footer-links">
+                <a href="https://www.youtube.com/@RB-GameOfficial" target="_blank">YouTube</a>
+                <a href="#" id="emailLinkBtn">почта (на всякий)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
