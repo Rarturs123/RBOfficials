@@ -18,7 +18,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(10px);
 }
 
 .nav-container {
@@ -132,6 +131,7 @@ body {
     border-radius: 40px;
     font-weight: 600;
     transition: all 0.2s;
+    display: inline-block;
 }
 
 .btn-primary:hover {
@@ -148,6 +148,7 @@ body {
     font-weight: 600;
     border: 1px solid #ff8c00;
     transition: all 0.2s;
+    display: inline-block;
 }
 
 .btn-secondary:hover {
@@ -161,10 +162,10 @@ body {
     padding: 0 24px 60px;
 }
 
-/* Features Grid - ICONS NOW ORANGE */
+/* Features Grid */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
     margin-bottom: 60px;
 }
@@ -174,7 +175,7 @@ body {
     padding: 32px 24px;
     text-align: center;
     border-radius: 20px;
-    border: 1px solid #1f1f1f;
+    border: 1px solid #222;
     transition: all 0.2s;
 }
 
@@ -186,7 +187,7 @@ body {
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 16px;
-    color: #ff8c00;  /* ← ORANGE ICONS */
+    color: #ff8c00;
 }
 
 .feature-card h3 {
@@ -209,7 +210,7 @@ body {
     background: #111;
     border-radius: 24px;
     padding: 48px;
-    border: 1px solid #1f1f1f;
+    border: 1px solid #222;
 }
 
 .about-card h2 {
@@ -233,7 +234,7 @@ body {
 
 /* YouTube Card */
 .youtube-card {
-    background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    background: #111;
     border-radius: 20px;
     padding: 28px 32px;
     margin-bottom: 60px;
@@ -241,12 +242,12 @@ body {
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #222;
 }
 
 .youtube-icon {
     font-size: 3rem;
-    color: #ff8c00;  /* ← ORANGE ICON */
+    color: #ff8c00;
 }
 
 .youtube-info {
@@ -278,7 +279,7 @@ body {
     background: #111;
     border-radius: 24px;
     padding: 48px;
-    border: 1px solid #1f1f1f;
+    border: 1px solid #222;
     text-align: center;
 }
 
@@ -302,6 +303,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-full {
     margin-bottom: 20px;
 }
 
@@ -311,11 +320,10 @@ body {
     width: 100%;
     padding: 14px 18px;
     background: #0a0a0a;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #333;
     border-radius: 12px;
     color: white;
     font-family: inherit;
-    margin-bottom: 20px;
 }
 
 .contact-form input:focus,
@@ -323,7 +331,7 @@ body {
 .contact-form textarea:focus {
     outline: none;
     border-color: #ff8c00;
-    box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.1);
 }
 
 .submit-button {
@@ -337,6 +345,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.2s;
+    margin-top: 8px;
 }
 
 .submit-button:hover {
@@ -388,7 +397,12 @@ body {
         font-size: 2.2rem;
     }
     
+    .hero {
+        padding: 50px 20px 40px;
+    }
+    
     .features-grid {
+        grid-template-columns: 1fr;
         gap: 16px;
     }
     
@@ -411,5 +425,9 @@ body {
     
     .nav-links {
         gap: 16px;
+    }
+    
+    .youtube-card {
+        padding: 20px;
     }
 }
