@@ -84,17 +84,25 @@
 
             <form id="contactForm" class="contact-form">
                 <div class="form-row">
-                    <input type="text" id="name" name="name" placeholder="Твоё имя" required>
-                    <input type="email" id="email" name="email" placeholder="Твоя почта" required>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Твоё имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Твоя почта" required>
+                    </div>
                 </div>
-                <select id="subject" name="subject" required>
-                    <option value="">— Выбери тему —</option>
-                    <option value="Реклама">Реклама / Спонсорство</option>
-                    <option value="Сотрудничество">Сотрудничество</option>
-                    <option value="Вопрос">Вопрос или просто привет</option>
-                    <option value="Другое">Другое</option>
-                </select>
-                <textarea id="message" name="message" placeholder="Твоё сообщение..." rows="4" required></textarea>
+                <div class="form-group-full">
+                    <select id="subject" name="subject" required>
+                        <option value="">— Выбери тему —</option>
+                        <option value="Реклама">Реклама / Спонсорство</option>
+                        <option value="Сотрудничество">Сотрудничество</option>
+                        <option value="Вопрос">Вопрос или просто привет</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group-full">
+                    <textarea id="message" name="message" placeholder="Твоё сообщение..." rows="4" required></textarea>
+                </div>
                 <button type="submit" id="submitBtn" class="submit-button">Отправить</button>
                 <div id="formStatus" class="form-status"></div>
             </form>
@@ -110,7 +118,8 @@
         </div>
     </footer>
 
+    <!-- Loading MainHandler.js (your existing file) -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="script.js"></script>
+    <script src="MainHandler.js"></script>
 </body>
 </html>
