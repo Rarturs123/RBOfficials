@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 setTimeout(() => { formStatus.style.display = "none"; }, 5000);
             } catch (error) {
-                console.error(error);
+                console.error("EmailJS Error:", error);
                 formStatus.textContent = "❌ Ошибка. Попробуй ещё или напиши на почту.";
                 formStatus.style.background = "rgba(255,68,68,0.1)";
                 formStatus.style.color = "#ff6666";
